@@ -59,6 +59,7 @@ if [[ "$bluetooth" == "y" ]]; then
   cd ~/Downloads || exit
   git clone https://github.com/leifliddy/macbook12-bluetooth-driver.git
   cd macbook12-bluetooth-driver || exit
+  ./install.bluetooth.sh
 
   # In some cases, you might need to compile or add a DKMS module
   # For example, if there's a PKGBUILD, you'd do:
